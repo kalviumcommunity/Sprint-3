@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data / Sessions (Optional: keep if demo data)
+# edurisk-ai/data/*.json
+# edurisk-ai/data/processed/*
+# edurisk-ai/data/raw/*
+
+# Keep sample data
+!edurisk-ai/data/samples/sample_data.csv
+
+# Models
+# edurisk-ai/models/*.pkl

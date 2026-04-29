@@ -4,5 +4,11 @@
     "email": "priya@school.edu",
     "password_hash": "cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416",
     "school_code": "EDURISK2026"
+  },
+  "teacher@school.edu": {
+    "name": "Ms. Priya Sharma",
+    "email": "teacher@school.edu",
+    "password_hash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "school_code": "EDURISK2026"
   }
 }

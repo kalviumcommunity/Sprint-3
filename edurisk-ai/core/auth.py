@@ -1,6 +1,7 @@
 """
 auth.py – Teacher authentication with school secret ID validation.
 Uses a simple JSON file for user storage with hashed passwords.
+Login state is persisted to disk so it survives page refreshes.
 """
 import os
 import json
@@ -80,6 +81,13 @@ def login(email: str, password: str) -> tuple[bool, str, dict | None]:
     if user['password_hash'] != _hash_password(password):
         return False, "Incorrect password.", None
 
+    # Persist auth to session and disk
+    st.session_state['authenticated'] = True
+    st.session_state['current_user'] = user
+
+    from core.session import _persist_auth
+    _persist_auth()
+
     return True, f"Welcome back, {user['name']}!", user
 
 
@@ -94,3 +102,6 @@ def get_current_user() -> dict | None:
 def logout():
     st.session_state['authenticated'] = False
     st.session_state['current_user'] = None
+
+    from core.session import _clear_persisted_auth
+    _clear_persisted_auth()
