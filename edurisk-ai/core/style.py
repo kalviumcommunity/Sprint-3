@@ -273,7 +273,6 @@ def inject_custom_css():
         }
 
         /* === SIDEBAR TOGGLE – style native Streamlit button === */
-        /* When sidebar is collapsed, the expand arrow appears */
         [data-testid="collapsedControl"] {
             position: fixed !important;
             top: 50% !important;
@@ -289,41 +288,18 @@ def inject_custom_css():
             justify-content: center !important;
             box-shadow: 2px 0 12px rgba(79,70,229,0.3) !important;
             border: none !important;
-            opacity: 0;
-            transition: opacity 0.25s ease, transform 0.25s ease !important;
+            opacity: 0.8 !important;
+            transition: all 0.3s ease !important;
         }
         [data-testid="collapsedControl"]:hover {
             opacity: 1 !important;
+            width: 36px !important;
             box-shadow: 4px 0 20px rgba(79,70,229,0.4) !important;
         }
         [data-testid="collapsedControl"] svg {
             color: white !important;
-            width: 20px !important;
-            height: 20px !important;
-        }
-        /* Invisible hover zone to trigger button visibility */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0;
-            width: 36px; height: 100vh;
-            z-index: 999998;
-        }
-        body:hover [data-testid="collapsedControl"] {
-            opacity: 0;
-        }
-        body::before:hover ~ [data-testid="collapsedControl"],
-        [data-testid="collapsedControl"]:hover {
-            opacity: 1 !important;
-        }
-        /* Show button when mouse is near left edge */
-        @supports (selector(:has(*))) {
-            body:has(> [data-testid="collapsedControl"]) [data-testid="collapsedControl"] {
-                opacity: 0.15;
-            }
-            [data-testid="collapsedControl"]:hover {
-                opacity: 1 !important;
-            }
+            width: 22px !important;
+            height: 22px !important;
         }
     </style>
     """, unsafe_allow_html=True)
