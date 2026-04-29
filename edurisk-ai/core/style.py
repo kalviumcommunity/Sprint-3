@@ -272,35 +272,6 @@ def inject_custom_css():
             background-clip: text;
         }
 
-        /* === SIDEBAR TOGGLE – style native Streamlit button === */
-        [data-testid="collapsedControl"] {
-            position: fixed !important;
-            top: 50% !important;
-            left: 0 !important;
-            transform: translateY(-50%) !important;
-            z-index: 999999 !important;
-            background: linear-gradient(135deg, #4f46e5, #6366f1) !important;
-            border-radius: 0 14px 14px 0 !important;
-            width: 30px !important;
-            height: 60px !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            box-shadow: 2px 0 12px rgba(79,70,229,0.3) !important;
-            border: none !important;
-            opacity: 0.8 !important;
-            transition: all 0.3s ease !important;
-        }
-        [data-testid="collapsedControl"]:hover {
-            opacity: 1 !important;
-            width: 36px !important;
-            box-shadow: 4px 0 20px rgba(79,70,229,0.4) !important;
-        }
-        [data-testid="collapsedControl"] svg {
-            color: white !important;
-            width: 22px !important;
-            height: 22px !important;
-        }
     </style>
     """, unsafe_allow_html=True)
 
