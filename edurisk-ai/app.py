@@ -37,7 +37,7 @@ st.markdown("""
     .stTabs [aria-selected="true"] { background: linear-gradient(135deg, #4f46e5, #6366f1) !important; color: white !important; }
     .stDownloadButton > button { background: linear-gradient(135deg, #059669, #10b981); color: white; border: none; border-radius: 10px; font-weight: 600; box-shadow: 0 2px 8px rgba(5,150,105,0.25); }
     [data-testid="stFileUploader"] { border: 2px dashed #cbd5e1; border-radius: 14px; padding: 16px; }
-    #MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;}
+    #MainMenu {visibility: hidden;} footer {visibility: hidden;}
     @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     .fade-in { animation: fadeInUp 0.6s ease-out forwards; }
