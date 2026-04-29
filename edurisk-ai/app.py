@@ -55,16 +55,16 @@ if not is_authenticated():
     with st.sidebar:
         st.markdown("""
 <div style="text-align:center; padding: 20px 0;">
-    <div style="background:linear-gradient(135deg, #4f46e5, #7c3aed); width:56px; height:56px; border-radius:16px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(79,70,229,0.3);">
-        <span class="mat-icon" style="font-size:28px; color:white; margin:0;">school</span>
-    </div>
-    <h2 style="margin:10px 0 0; color:#0f172a; font-weight:900; font-size:1.4rem;">EDURISK AI</h2>
-    <p style="color:#64748b; font-size:0.72rem; margin-top:2px;">Student Performance Early Warning System</p>
+<div style="background:linear-gradient(135deg, #4f46e5, #7c3aed); width:56px; height:56px; border-radius:16px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(79,70,229,0.3);">
+<span class="mat-icon" style="font-size:28px; color:white; margin:0;">school</span>
+</div>
+<h2 style="margin:10px 0 0; color:#0f172a; font-weight:900; font-size:1.4rem;">EDURISK AI</h2>
+<p style="color:#64748b; font-size:0.72rem; margin-top:2px;">Student Performance Early Warning System</p>
 </div>
 <hr style="border-color:#e2e8f0;">
 <p style="color:#64748b; font-size:0.8rem; padding:0 8px;">
-    <span class="mat-icon" style="font-size:16px;">info</span>
-    Teachers need a <b>School Secret ID</b> to sign up. Contact your school administrator.
+<span class="mat-icon" style="font-size:16px;">info</span>
+Teachers need a <b>School Secret ID</b> to sign up. Contact your school administrator.
 </p>
 """, unsafe_allow_html=True)
 
@@ -74,73 +74,72 @@ if not is_authenticated():
     with col_info:
         st.markdown("""
 <div class="fade-in" style="padding: 60px 0 0 20px;">
-    <div style="background:linear-gradient(135deg, #4f46e5, #7c3aed); width:64px; height:64px; border-radius:18px;
-                display:inline-flex; align-items:center; justify-content:center;
-                box-shadow:0 6px 20px rgba(79,70,229,0.3); animation: float 3s ease-in-out infinite;">
-        <span class="mat-icon" style="font-size:32px; color:white; margin:0;">school</span>
-    </div>
-    <h1 style="font-size:2.8rem; margin:20px 0 8px; letter-spacing:-0.03em; line-height:1.1;">
-        EDURISK
-        <span style="background:linear-gradient(135deg, #4f46e5, #7c3aed); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">AI</span>
-    </h1>
-    <p style="color:#64748b; font-size:1.05rem; max-width:440px; line-height:1.6; margin-bottom:32px;">
-        Transform raw school data into actionable early-warning insights.
-        Identify at-risk students and take timely, data-driven action.</p>
+<div style="background:linear-gradient(135deg, #4f46e5, #7c3aed); width:64px; height:64px; border-radius:18px;
+display:inline-flex; align-items:center; justify-content:center;
+box-shadow:0 6px 20px rgba(79,70,229,0.3); animation: float 3s ease-in-out infinite;">
+<span class="mat-icon" style="font-size:32px; color:white; margin:0;">school</span>
+</div>
+<h1 style="font-size:2.8rem; margin:20px 0 8px; letter-spacing:-0.03em; line-height:1.1;">
+EDURISK
+<span style="background:linear-gradient(135deg, #4f46e5, #7c3aed); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">AI</span>
+</h1>
+<p style="color:#64748b; font-size:1.05rem; max-width:440px; line-height:1.6; margin-bottom:32px;">
+Transform raw school data into actionable early-warning insights.
+Identify at-risk students and take timely, data-driven action.</p>
 </div>
 """, unsafe_allow_html=True)
 
         st.markdown("""
 <div class="fade-in-delay" style="display:flex; gap:16px; flex-wrap:wrap; padding-left:20px;">
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 20px; min-width:120px;">
-        <p style="color:#4f46e5; font-size:1.4rem; font-weight:800; margin:0;">12+</p>
-        <p style="color:#64748b; font-size:0.75rem; margin:0;">Interactive Charts</p>
-    </div>
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 20px; min-width:120px;">
-        <p style="color:#7c3aed; font-size:1.4rem; font-weight:800; margin:0;">AI</p>
-        <p style="color:#64748b; font-size:0.75rem; margin:0;">Powered Insights</p>
-    </div>
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 20px; min-width:120px;">
-        <p style="color:#059669; font-size:1.4rem; font-weight:800; margin:0;">PDF</p>
-        <p style="color:#64748b; font-size:0.75rem; margin:0;">Report Export</p>
-    </div>
+<div style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 20px; min-width:120px;">
+<p style="color:#4f46e5; font-size:1.4rem; font-weight:800; margin:0;">12+</p>
+<p style="color:#64748b; font-size:0.75rem; margin:0;">Interactive Charts</p>
+</div>
+<div style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 20px; min-width:120px;">
+<p style="color:#7c3aed; font-size:1.4rem; font-weight:800; margin:0;">AI</p>
+<p style="color:#64748b; font-size:0.75rem; margin:0;">Powered Insights</p>
+</div>
+<div style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px 20px; min-width:120px;">
+<p style="color:#059669; font-size:1.4rem; font-weight:800; margin:0;">PDF</p>
+<p style="color:#64748b; font-size:0.75rem; margin:0;">Report Export</p>
+</div>
 </div>
 """, unsafe_allow_html=True)
 
         st.markdown("""
 <div class="fade-in-delay2" style="padding:28px 0 0 20px; display:flex; gap:24px; align-items:center;">
-    <div style="display:flex; align-items:center; gap:6px;">
-        <span class="mat-icon" style="font-size:16px; color:#10b981;">lock</span>
-        <span style="color:#64748b; font-size:0.78rem;">Data stays local</span>
-    </div>
-    <div style="display:flex; align-items:center; gap:6px;">
-        <span class="mat-icon" style="font-size:16px; color:#10b981;">verified_user</span>
-        <span style="color:#64748b; font-size:0.78rem;">School-verified access</span>
-    </div>
-    <div style="display:flex; align-items:center; gap:6px;">
-        <span class="mat-icon" style="font-size:16px; color:#10b981;">speed</span>
-        <span style="color:#64748b; font-size:0.78rem;">Instant analysis</span>
-    </div>
+<div style="display:flex; align-items:center; gap:6px;">
+<span class="mat-icon" style="font-size:16px; color:#10b981;">lock</span>
+<span style="color:#64748b; font-size:0.78rem;">Data stays local</span>
+</div>
+<div style="display:flex; align-items:center; gap:6px;">
+<span class="mat-icon" style="font-size:16px; color:#10b981;">verified_user</span>
+<span style="color:#64748b; font-size:0.78rem;">School-verified access</span>
+</div>
+<div style="display:flex; align-items:center; gap:6px;">
+<span class="mat-icon" style="font-size:16px; color:#10b981;">speed</span>
+<span style="color:#64748b; font-size:0.78rem;">Instant analysis</span>
+</div>
 </div>
 """, unsafe_allow_html=True)
 
     with col_form:
         st.markdown("""
 <div class="fade-in-delay" style="background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:36px 32px; margin-top:40px; box-shadow:0 4px 24px rgba(0,0,0,0.06);">
-    <h3 style="text-align:center; margin:0 0 4px; font-size:1.2rem; color:#0f172a;">Welcome back</h3>
-    <p style="text-align:center; color:#94a3b8; font-size:0.85rem; margin-bottom:12px;">Sign in to your account</p>
-    
-    <!-- Demo Credentials Box -->
-    <div style="background:#f1f5f9; border-radius:12px; padding:12px; border:1px dashed #cbd5e1; margin-bottom:20px;">
-        <p style="margin:0; color:#475569; font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; text-align:center;">Demo Credentials</p>
-        <div style="display:flex; justify-content:space-between; margin-top:8px; font-family:monospace; font-size:0.85rem; color:#4f46e5;">
-            <span>Email:</span>
-            <strong>teacher@school.edu</strong>
-        </div>
-        <div style="display:flex; justify-content:space-between; margin-top:4px; font-family:monospace; font-size:0.85rem; color:#4f46e5;">
-            <span>Pass:</span>
-            <strong>password123</strong>
-        </div>
-    </div>
+<h3 style="text-align:center; margin:0 0 4px; font-size:1.2rem; color:#0f172a;">Welcome back</h3>
+<p style="text-align:center; color:#94a3b8; font-size:0.85rem; margin-bottom:12px;">Sign in to your account</p>
+<!-- Demo Credentials Box -->
+<div style="background:#f1f5f9; border-radius:12px; padding:12px; border:1px dashed #cbd5e1; margin-bottom:20px;">
+<p style="margin:0; color:#475569; font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; text-align:center;">Demo Credentials</p>
+<div style="display:flex; justify-content:space-between; margin-top:8px; font-family:monospace; font-size:0.85rem; color:#4f46e5;">
+<span>Email:</span>
+<strong>teacher@school.edu</strong>
+</div>
+<div style="display:flex; justify-content:space-between; margin-top:4px; font-family:monospace; font-size:0.85rem; color:#4f46e5;">
+<span>Pass:</span>
+<strong>password123</strong>
+</div>
+</div>
 </div>
 """, unsafe_allow_html=True)
 
