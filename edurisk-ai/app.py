@@ -129,7 +129,20 @@ if not is_authenticated():
         st.markdown("""
         <div class="fade-in-delay" style="background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:36px 32px; margin-top:40px; box-shadow:0 4px 24px rgba(0,0,0,0.06);">
             <h3 style="text-align:center; margin:0 0 4px; font-size:1.2rem; color:#0f172a;">Welcome back</h3>
-            <p style="text-align:center; color:#94a3b8; font-size:0.85rem; margin-bottom:20px;">Sign in to your account</p>
+            <p style="text-align:center; color:#94a3b8; font-size:0.85rem; margin-bottom:12px;">Sign in to your account</p>
+            
+            <!-- Demo Credentials Box -->
+            <div style="background:#f1f5f9; border-radius:12px; padding:12px; border:1px dashed #cbd5e1; margin-bottom:20px;">
+                <p style="margin:0; color:#475569; font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; text-align:center;">Demo Credentials</p>
+                <div style="display:flex; justify-content:space-between; margin-top:8px; font-family:monospace; font-size:0.85rem; color:#4f46e5;">
+                    <span>Email:</span>
+                    <strong>teacher@school.edu</strong>
+                </div>
+                <div style="display:flex; justify-content:space-between; margin-top:4px; font-family:monospace; font-size:0.85rem; color:#4f46e5;">
+                    <span>Pass:</span>
+                    <strong>password123</strong>
+                </div>
+            </div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -137,8 +150,8 @@ if not is_authenticated():
 
         with tab_login:
             with st.form("login_form"):
-                login_email = st.text_input("Email", placeholder="teacher@school.edu")
-                login_password = st.text_input("Password", type="password", placeholder="Enter password")
+                login_email = st.text_input("Email", value="teacher@school.edu")
+                login_password = st.text_input("Password", type="password", value="password123")
                 submitted = st.form_submit_button("Sign In", type="primary", use_container_width=True)
                 if submitted:
                     success, msg, user = login(login_email, login_password)
